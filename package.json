@@ -1,0 +1,32 @@
+{
+  "name": "subtract-object",
+  "version": "1.0.0",
+  "description": "Subtract/minus one object from another object",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/* --bail"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "should": "^11.2.1",
+    "should-http": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jonathankeebler@github.com/jonathankeebler/subtract-object.git"
+  },
+  "keywords": [
+    "subtract",
+    "object",
+    "minus"
+  ],
+  "author": "Jonathan Keebler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathankeebler/subtract-object/issues"
+  },
+  "homepage": "https://github.com/jonathankeebler/subtract-object#readme",
+  "dependencies": {
+
+  }
+}
