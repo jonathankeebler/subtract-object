@@ -112,7 +112,42 @@ describe("subtract-object", function()
         });
 
         done();
-    })
+    });
+
+    it("should properly handle false booleans", function(done)
+    {
+        SubtractObject({
+            is: {
+                foo: false
+            }
+        }, 
+        {
+            is: {
+                foo:true
+            }
+        }).should.eql({
+            is: {
+                foo: true
+            }
+        });
+
+        SubtractObject({
+            is: {
+                foo: true
+            }
+        }, 
+        {
+            is: {
+                foo:false
+            }
+        }).should.eql({
+            is: {
+                foo: false
+            }
+        });
+
+        done();
+    });
 
 
 });
