@@ -1,6 +1,6 @@
 {
   "name": "subtract-object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Subtract/minus one object from another object",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,5 @@
     "url": "https://github.com/jonathankeebler/subtract-object/issues"
   },
   "homepage": "https://github.com/jonathankeebler/subtract-object#readme",
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
