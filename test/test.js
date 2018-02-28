@@ -147,6 +147,44 @@ describe("subtract-object", function()
         });
 
         done();
+	});
+	
+	it("should properly handle dates", function(done)
+    {
+		var now = new Date();
+
+		SubtractObject({
+            date: {
+                now: new Date(0)
+            }
+        }, 
+        {
+            date: {
+                now: now
+            }
+        }).should.eql({
+            date: {
+                now: now
+            }
+		});
+		
+		SubtractObject({
+            date: {
+                now: now
+            }
+        }, 
+        {
+            date: {
+                now: new Date(0)
+            }
+        }).should.eql({
+            date: {
+                now: new Date(0)
+            }
+        });
+
+
+        done();
     });
 
 
